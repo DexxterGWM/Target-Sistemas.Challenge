@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+  <head>
+
+    <meta charset = 'UTF-8'>
+    <meta http-equiv = 'X-UA-Compatible' content = 'IE=edge'>
+    <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+    <link rel = 'stylesheet' href = 'style.css'>
+
+    <title>Target Sistemas - Challenges</title>
+
+  </head>
+  <body>
+
+    <h1>Question 1 of 5</h1>
+
+    <p>See the code snippet below:</p>
+    <div id = 'question1'>
+      <code>
+        int INDEX = 13, SUM = 0, K = 0;
+        
+        while K < INDICE do
+        {
+          K = K + 1;
+          SUM = SUM + K;
+        }
+        
+        print(SUM);
+      </code>
+    </div>
+
+    <p>At the end of processing, what will be the value of the SUM variable?</p>
+
+    <!-- Solution Question 1-->
+    <h2>Question Soluction</h2>
+    <div id = 'solution'>
+      <p>Result: <span id = 'sumResult'></span></p>
+    </div>
+
+    <h1>Question 2 of 5</h1>
+    <p>
+      Given the Fibonacci sequence, where it starts with 0 and 1 and the next value will always be the sum of the 2 values previous ones
+      (example: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), write a program in the language you want where, entered a number, it calculates the
+      Fibonacci sequence and returns a message warning if the number entered does or does not belong to the sequence.
+    </p>
+
+    <p>IMPORTANT:
+      This number can be informed through any input of your choice or it can be previously defined in the code.
+    </p>
+
+    <!-- Solution Question 2 -->
+    <h2>Question Soluction</h2>
+    <div id = 'solution'>
+      <label for = 'numberInput'>Enter a number and see if it is part of the Fibonacci sequence or not:</label>
+      <input type = 'number' id = 'numberInput'>
+      <button id = 'checkButton'>Confirm</button>
+      <span id = 'result'></span>
+    </div>
+
+    <h1>Question 3 of 5</h1>
+    <p>
+      Given a vector that stores the daily billing value of a distributor, write a program, in the language that
+      you want, it calculates and returns:
+      <ul>
+        <li>The lowest billing amount that occurred on a day of the month;</li>
+        <li>The highest billing amount that occurred on a day of the month;</li>
+        <li>Number of days in the month that the daily billing amount was greater than the monthly average.</li>
+      </ul>
+    </p>
+
+    <p>IMPORTANT:</p>
+    <ol>
+      <li>Use available json or xml as a source of monthly billing data;</li>
+      <li>There may be days without billing, such as weekends and holidays. These days should be ignored when calculating the average.</li>
+    </ol>
+
+    <!-- Solution Question 3 -->
+    <h2>Question Soluction</h2>
+    <div id = 'solution'>
+      <p id = 'total'>Total sold: R$ <span></span></p>
+      <p id = 'dayMost'>Highest billing amount: R$ <span></span></p>
+      <p id = 'dayLeast'>Lowest billing amount: R$ <span></span></p>
+      <p id = 'monthlyAvg'>Number of days in the month that the daily billing amount was greater than the monthly average: <span></span></p>
+    </div>
+
+    <h1>Question 4 of 5</h1>
+    <p>Given the monthly billing value of a distributor, broken down by state:</p>
+
+    <ul>
+      <li>SP - R$67.836,43</li>
+      <li>RJ - R$36.678,66</li>
+      <li>MG - R$29.229,88</li>
+      <li>ES - R$27.165,48</li>
+      <li>Others - R$19.849,53</li>
+    </ul>
+
+    <p>
+      Write a program in the language you want where it calculates the percentage of representation that each state had
+      within the total monthly value of the distributor.
+    </p>
+
+    <!-- Solution Question 4 -->
+    <h2>Question Soluction:</h2>
+    <div id = 'solution'>
+      <ul id = 'resultShare'>
+        <li>SP: %</li>
+        <li>RJ: %</li>
+        <li>MG: %</li>
+        <li>ES: %</li>
+        <li>Others: %</li>
+      </ul>
+    </div>
+
+    <h1>Question 5 of 5</h1>
+    <p>Write a program that reverses the characters in a string.
+      <ul>
+        <li>This string can be informed through any input of your choice or it can be previously defined in the code;</li>
+        <li>Avoid using ready-made functions, such as reverse.</li>
+      </ul>
+    </p>
+
+    <!-- Solution Question 5 -->
+    <div id = 'solution'>
+      <h2>Question Solution</h2>
+      <label for = 'wordInput'>Type a word:</label>
+      <input type = 'text' id = 'wordInput'>
+      <button id = 'reverseButton'>Reverse</button>
+      <span id = 'resultReverse'></span>
+    </div>
+    
+    <script type = 'module' src = './main.js'></script>
+
+  </body>
+</html>
